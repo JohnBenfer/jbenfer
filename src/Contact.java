@@ -4,22 +4,24 @@ public class Contact {
     public String phoneNumber;
     public String email;
 
-
-
     public Contact(String name, String phoneNumber, String email) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.email = email;
-
     }
 
-    public String toString(){
+
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(this.name);
         sb.append(" ");
-        sb.append("<" + this.phoneNumber + ">");
+        sb.append("<");
+        sb.append(this.phoneNumber);
+        sb.append(">");
         sb.append(" ");
-        sb.append("(" + this.email + ")");
+        sb.append("(");
+        sb.append(this.email);
+        sb.append(")");
         return sb.toString();
     }
 }
