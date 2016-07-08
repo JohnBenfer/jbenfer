@@ -15,13 +15,9 @@ public class Contact {
         StringBuilder sb = new StringBuilder();
         sb.append(this.name);
         sb.append(" ");
-        sb.append("<");
-        sb.append(this.phoneNumber);
-        sb.append(">");
+        sb.append("<" + this.phoneNumber + ">");
         sb.append(" ");
-        sb.append("(");
-        sb.append(this.email);
-        sb.append(")");
+        sb.append("(" + this.email + ")");
         return sb.toString();
     }
 }
