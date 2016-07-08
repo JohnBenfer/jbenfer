@@ -6,6 +6,7 @@ public class Main {
         List<String> content = readFile("src/Contacts");
         List<Contact> contacts = createContacts(content);
         System.out.print(contacts);
+        // hi
     }
 
 
